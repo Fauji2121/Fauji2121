@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="180" viewBox="0 0 680 180" role="img" aria-labelledby="t d">
+  <title id="t">Hi, I'm Fauji</title>
+  <desc id="d">Frontend Developer | Aspiring Full Stack Engineer</desc>
+
+  <defs>
+    <!-- Latar banner: gelap bergradasi teal -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a1a24"/>
+      <stop offset="0.6" stop-color="#0c2f3a"/>
+      <stop offset="1" stop-color="#0f4a4f"/>
+    </linearGradient>
+
+    <!-- Gradasi teks bagian 1: hijau -> mint -->
+    <linearGradient id="grad-role" gradientUnits="userSpaceOnUse" x1="88" y1="0" x2="298" y2="0">
+      <stop offset="0" stop-color="#7df070"/>
+      <stop offset="1" stop-color="#52e0a8"/>
+    </linearGradient>
+
+    <!-- Gradasi teks bagian 2: mint -> teal -->
+    <linearGradient id="grad-aspiring" gradientUnits="userSpaceOnUse" x1="310" y1="0" x2="600" y2="0">
+      <stop offset="0" stop-color="#52e0a8"/>
+      <stop offset="0.5" stop-color="#2dd4d4"/>
+      <stop offset="1" stop-color="#2dd4d4"/>
+    </linearGradient>
+
+    <!-- Gradasi garis atas dan bawah -->
+    <linearGradient id="grad-line" gradientUnits="userSpaceOnUse" x1="80" y1="0" x2="600" y2="0">
+      <stop offset="0" stop-color="#7df070" stop-opacity="0"/>
+      <stop offset="0.25" stop-color="#7df070"/>
+      <stop offset="0.7" stop-color="#2dd4d4"/>
+      <stop offset="1" stop-color="#2dd4d4" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    /* ------------------------------------------------------------
+       PENGATURAN DASAR
+       Font memakai font bawaan sistem pengunjung.
+       ------------------------------------------------------------ */
+    text {
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 600;
+    }
+
+    /* ------------------------------------------------------------
+       WAKTU TOTAL SATU PUTARAN
+       Ubah angka ini untuk mempercepat atau memperlambat semuanya.
+       Pakai nilai yang sama di semua animasi supaya tetap sinkron.
+       ------------------------------------------------------------ */
+
+    /* ------------------------------------------------------------
+       CONTOH ANIMASI (SUDAH JALAN): judul berkedip lembut
+       Pola yang sama dipakai untuk bagian lain:
+       1. buat @keyframes dengan nama sendiri
+       2. pasang ke class lewat "animation"
+       Persentase = titik waktu dalam satu putaran 8 detik.
+         0%   = detik ke-0
+         10%  = detik ke-0,8
+         50%  = detik ke-4
+         90%  = detik ke-7,2
+       ------------------------------------------------------------ */
+    @keyframes title-blink {
+      0%   { opacity: 0; }
+      10%  { opacity: 1; }
+      20%  { opacity: 0.4; }
+      30%  { opacity: 1; }
+      40%  { opacity: 0.4; }
+      50%  { opacity: 1; }
+      90%  { opacity: 1; }
+      100% { opacity: 0; }
+    }
+    .title {
+      animation: title-blink 9s ease-in-out infinite;
+    }
+
+    /* ------------------------------------------------------------
+       TUGAS ANDA (ISI SENDIRI)
+
+       1. .line-top dan .line-bottom
+          Muncul perlahan di awal, berdenyut pelan di akhir.
+          Tips: bergantian, beri animation-delay berbeda.
+
+       2. .role  ("Frontend Developer |")
+          Bergeser dari kanan ke kiri sambil memudar masuk.
+          Tips: transform: translateX(50px) lalu ke translateX(0)
+          Mulai sekitar detik 2,0 (25%), selesai sekitar 2,9 (36%).
+
+       3. .aspiring  ("Aspiring Full Stack Engineer")
+          Berkedip lembut 2-3 kali lalu tetap menyala.
+          Mulai sekitar detik 3,3 (41%), selesai sekitar 4,8 (60%).
+
+       4. Semua memudar halus di 90%-100% supaya putaran berikutnya
+          mulus (lihat bagian akhir @keyframes title-blink).
+
+       5. Bonus: reduced motion (lihat blok di bawah).
+       ------------------------------------------------------------ */
+
+  
+    @keyframes role-slide {
+  0%, 25% { opacity: 0; transform: translateX(50px); }
+  36%     { opacity: 1; transform: translateX(0); }
+  90%     { opacity: 1; transform: translateX(0); }
+  100%    { opacity: 0; transform: translateX(0); }
+}
+.role {
+  animation: role-slide 9s ease-out infinite;
+}
+    @keyframes aspiring-blink {
+  0%, 41% { opacity: 0; }
+  46%     { opacity: 1; }
+  50%     { opacity: 0.4; }
+  54%     { opacity: 1; }
+  58%     { opacity: 0.4; }
+  62%     { opacity: 1; }
+  90%     { opacity: 1; }
+  100%    { opacity: 0; }
+}
+.aspiring {
+  animation: aspiring-blink 9s ease-in-out infinite;
+  .title    { animation: title-blink 9s ease-in-out infinite; }
+.role     { animation: role-slide 9s ease-out infinite; }
+.aspiring { animation: aspiring-blink 9s ease-in-out infinite; }
+}
+@keyframes line-top-pulse {
+  0%   { opacity: 0; }
+  10%  { opacity: 1; }
+  40%  { opacity: 1; }
+  55%  { opacity: 0.3; }
+  70%  { opacity: 1; }
+  90%  { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes line-bottom-pulse {
+  0%   { opacity: 0; }
+  5%   { opacity: 0; }
+  15%  { opacity: 1; }
+  55%  { opacity: 1; }
+  70%  { opacity: 0.3; }
+  85%  { opacity: 1; }
+  90%  { opacity: 1; }
+  100% { opacity: 0; }
+}
+.line-top {
+  animation: line-top-pulse 9s ease-in-out infinite;
+}
+.line-bottom {
+  animation: line-bottom-pulse 9s ease-in-out infinite;
+}
+
+     Untuk pengunjung yang mengaktifkan "kurangi gerakan":
+       banner tampil diam. Hapus tanda komentar jika semua
+       animasi sudah jadi.
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+    }
+  
+  </style>
+
+  <!-- Latar -->
+  <rect x="0" y="0" width="680" height="180" rx="14" fill="url(#bg)"/>
+
+  <!-- Garis atas -->
+  <rect class="line-top" x="80" y="26" width="520" height="2" fill="url(#grad-line)"/>
+
+  <!-- Judul -->
+  <text class="title" x="340" y="84" text-anchor="middle" font-size="42" fill="#7df070">Hi, I'm Fauji</text>
+
+  <!-- Baris peran: bagian 1 rata kanan, bagian 2 rata kiri, bertemu di tengah -->
+  <text class="role" x="298" y="126" text-anchor="end" font-size="21" fill="url(#grad-role)">Frontend Developer |</text>
+  <text class="aspiring" x="310" y="126" text-anchor="start" font-size="21" fill="url(#grad-aspiring)">Aspiring Full Stack Engineer</text>
+
+  <!-- Garis bawah -->
+  <rect class="line-bottom" x="80" y="152" width="520" height="2" fill="url(#grad-line)"/>
+</svg>
