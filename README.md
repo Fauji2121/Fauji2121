@@ -13,3 +13,16 @@ Saya terus mendalami HTML, CSS, JavaScript, dan TypeScript untuk membangun antar
 <p align="justify">
 Ke depannya, saya ingin memperluas kemampuan ke <b>Backend Development</b> dan memahami cara kerja sebuah aplikasi secara menyeluruh. Saya percaya bahwa menguasai frontend sebagai fondasi, lalu mengembangkannya ke backend, adalah langkah penting menuju Full Stack Software Engineer.
 </p>
+
+<h3>Hubungi saya</h3>
+
+<a href="https://instagram.com/fauji.01_"><img src="./assets/icons/brand-instagram.svg" width="40" height="40" align="absmiddle" alt="Instagram"></a>
+&nbsp; <a href="https://instagram.com/fauji.01_"><b>@fauji.01_</b></a>
+<br><br>
+
+<a href="https://www.linkedin.com/in/fauji-47a949377"><img src="./assets/icons/brand-linkedin.svg" width="40" height="40" align="absmiddle" alt="LinkedIn"></a>
+&nbsp; <a href="https://www.linkedin.com/in/fauji-47a949377"><b>FAUJI.</b></a>
+<br><br>
+
+<a href="mailto:fauji00111@gmail.com"><img src="./assets/icons/brand-mail.svg" width="40" height="40" align="absmiddle" alt="Email"></a>
+&nbsp; <a href="mailto:fauji00111@gmail.com"><b>fauji00111@gmail.com</b></a>
