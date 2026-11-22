@@ -20,6 +20,7 @@ Ke depannya, saya ingin memperluas kemampuan ke <b>Backend Development</b> dan m
   <img src="./assets/divider/divider.svg" alt="" width="100%">
 </div>
 
+<img src="./assets/images/character-teal.webp" align="right" width="46%" alt="Karakter Fauji">
 
 <h3>Hubungi saya</h3>
 
@@ -33,3 +34,5 @@ Ke depannya, saya ingin memperluas kemampuan ke <b>Backend Development</b> dan m
 
 <a href="mailto:fauji00111@gmail.com"><img src="./assets/icons/brand-mail.svg" width="40" height="40" align="absmiddle" alt="Email"></a>
 &nbsp; <a href="mailto:fauji00111@gmail.com"><b>fauji00111@gmail.com</b></a>
+
+<br clear="all">
