@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="64" viewBox="0 0 340 64" role="img" aria-label="Instagram @fauji.01_">
+  <title>Instagram @fauji.01_</title>
+
+  <defs>
+    <!-- Kilau yang menyapu teks: hijau terang di tengah, transparan di tepi -->
+    <linearGradient id="shine-ig" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7df070" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#7df070" stop-opacity="1"/>
+      <stop offset="1" stop-color="#2dd4d4" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Kilau hanya terlihat di atas huruf -->
+    <mask id="text-ig">
+      <text x="68" y="48" font-size="17" font-weight="600" fill="#ffffff">@fauji.01_</text>
+    </mask>
+  </defs>
+
+  <style>
+    text {
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    /* Satu putaran = 9 detik, sama dengan banner dan elemen lain */
+
+    /* Kartu masuk dari kiri, diam, lalu memudar di akhir putaran */
+    @keyframes slide-ig {
+      0%, 4% { opacity: 0; transform: translateX(-30px); }
+      10%     { opacity: 1; transform: translateX(0); }
+      90%       { opacity: 1; transform: translateX(0); }
+      100%      { opacity: 0; transform: translateX(0); }
+    }
+    .card { animation: slide-ig 9s ease-out infinite; }
+
+    /* Kilau menyapu teks satu kali per putaran */
+    @keyframes shine-ig {
+      0%, 30% { transform: translateX(-130px); }
+      45%     { transform: translateX(330px); }
+      100%      { transform: translateX(330px); }
+    }
+    .shine { animation: shine-ig 9s ease-in-out infinite; }
+
+    /* Pengunjung yang mengaktifkan "kurangi gerakan" melihat kartu diam */
+    @media (prefers-reduced-motion: reduce) {
+      .card, .shine { animation: none; }
+      .shine { opacity: 0; }
+    }
+  </style>
+
+  <g class="card">
+    <!-- Kartu gelap: tetap terbaca di tema GitHub terang maupun gelap -->
+    <rect x="0.5" y="0.5" width="339" height="63" rx="14" fill="#0d1117" stroke="#30363d"/>
+
+    <!-- Ikon -->
+    <g transform="translate(8 8)">
+      <rect width="48" height="48" rx="12" fill="#d62976"/>
+      <g transform="translate(9.6 9.6) scale(1.2)" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4l0 -10"/><path d="M8.5 12a3.5 3.5 0 1 0 7 0a3.5 3.5 0 0 0 -7 0"/><path d="M17 7v.01"/></g>
+    </g>
+
+    <!-- Teks -->
+    <text x="68" y="28" font-size="12" fill="#8b949e">Instagram</text>
+    <text x="68" y="48" font-size="17" font-weight="600" fill="#f0f6fc">@fauji.01_</text>
+
+    <!-- Kilau -->
+    <g mask="url(#text-ig)">
+      <rect class="shine" x="68" y="28" width="110" height="26" fill="url(#shine-ig)"/>
+    </g>
+  </g>
+</svg>

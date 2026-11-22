@@ -23,16 +23,14 @@ Ke depannya, saya ingin memperluas kemampuan ke <b>Backend Development</b> dan m
 <img src="./assets/images/character-teal.webp" align="right" width="46%" alt="Karakter Fauji">
 
 <h3>Hubungi saya</h3>
+<img src="./assets/contact/heading-underline.svg" width="140" alt="">
 
-<a href="https://instagram.com/fauji.01_"><img src="./assets/icons/brand-instagram.svg" width="40" height="40" align="absmiddle" alt="Instagram"></a>
-&nbsp; <a href="https://instagram.com/fauji.01_"><b>@fauji.01_</b></a>
-<br><br>
+<br>
 
-<a href="https://www.linkedin.com/in/fauji-47a949377"><img src="./assets/icons/brand-linkedin.svg" width="40" height="40" align="absmiddle" alt="LinkedIn"></a>
-&nbsp; <a href="https://www.linkedin.com/in/fauji-47a949377"><b>FAUJI.</b></a>
-<br><br>
-
-<a href="mailto:fauji00111@gmail.com"><img src="./assets/icons/brand-mail.svg" width="40" height="40" align="absmiddle" alt="Email"></a>
-&nbsp; <a href="mailto:fauji00111@gmail.com"><b>fauji00111@gmail.com</b></a>
+<a href="https://instagram.com/fauji.01_"><img src="./assets/contact/row-instagram.svg" width="340" alt="Instagram @fauji.01_"></a>
+<br>
+<a href="https://www.linkedin.com/in/fauji-47a949377"><img src="./assets/contact/row-linkedin.svg" width="340" alt="LinkedIn FAUJI."></a>
+<br>
+<a href="mailto:fauji00111@gmail.com"><img src="./assets/contact/row-email.svg" width="340" alt="Email fauji00111@gmail.com"></a>
 
 <br clear="all">

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="6" viewBox="0 0 140 6" role="img" aria-label="Garis hiasan">
+  <defs>
+    <linearGradient id="grad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="140" y2="0">
+      <stop offset="0" stop-color="#7df070"/>
+      <stop offset="1" stop-color="#2dd4d4"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    /* Garis tumbuh dari kiri, diam, lalu memudar. Satu putaran = 9 detik */
+    @keyframes grow {
+      0%   { opacity: 1; transform: scaleX(0); }
+      8%   { opacity: 1; transform: scaleX(1); }
+      90%  { opacity: 1; transform: scaleX(1); }
+      100% { opacity: 0; transform: scaleX(1); }
+    }
+    .line {
+      transform-box: fill-box;
+      transform-origin: left center;
+      animation: grow 9s ease-out infinite;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .line { animation: none; }
+    }
+  </style>
+
+  <rect class="line" x="0" y="1" width="140" height="4" rx="2" fill="url(#grad)"/>
+</svg>
