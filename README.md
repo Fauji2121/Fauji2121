@@ -22,6 +22,8 @@ Ke depannya, saya ingin memperluas kemampuan ke <b>Backend Development</b> dan m
 
 <h3>Hubungi saya</h3>
 
+<img src="./assets/images/character-teal.webp" align="right" width="46%" alt="Karakter Fauji">
+
 <img src="./assets/contact/heading-underline.svg" width="140" alt="">
 
 <a href="https://instagram.com/fauji.01_"><img src="./assets/contact/row-instagram.svg" width="340" alt="Instagram @fauji.01_"></a>
