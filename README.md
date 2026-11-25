@@ -33,3 +33,14 @@ Ke depannya, saya ingin memperluas kemampuan ke <b>Backend Development</b> dan m
 <a href="mailto:fauji00111@gmail.com"><img src="./assets/contact/row-email.svg" width="340" alt="Email fauji00111@gmail.com"></a>
 
 <br clear="all">
+
+<div align="center">
+  <img src="./assets/divider/divider.svg" alt="" width="100%">
+</div>
+
+<h3>Teknologi saya</h3>
+<img src="./assets/contact/heading-underline.svg" width="140" alt="">
+
+<br>
+
+<img src="./assets/tech/tech-stack.svg" width="340" alt="Teknologi: HTML, CSS, JavaScript">

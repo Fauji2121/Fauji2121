@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="112" viewBox="0 0 340 112" role="img" aria-label="Teknologi: HTML, CSS, JavaScript">
+  <title>Teknologi: HTML, CSS, JavaScript</title>
+
+  <style>
+    text {
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    /* Satu putaran = 9 detik, sama dengan banner dan elemen lain.
+       Tiap ikon muncul bergantian, melayang pelan, lalu memudar di akhir. */
+    .tile {
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+
+    @keyframes pop-0 {
+      0%, 4% { opacity: 0; transform: translateY(8px) scale(0.6); }
+      11%     { opacity: 1; transform: translateY(0) scale(1.08); }
+      14%     { opacity: 1; transform: translateY(0) scale(1); }
+      30%     { transform: translateY(-3px) scale(1); }
+      42%     { transform: translateY(0) scale(1); }
+      54%     { transform: translateY(-3px) scale(1); }
+      66%     { transform: translateY(0) scale(1); }
+      78%     { transform: translateY(-3px) scale(1); }
+      88%     { transform: translateY(0) scale(1); }
+      90%       { opacity: 1; transform: translateY(0) scale(1); }
+      100%      { opacity: 0; transform: translateY(0) scale(1); }
+    }
+    @keyframes pop-1 {
+      0%, 8% { opacity: 0; transform: translateY(8px) scale(0.6); }
+      15%     { opacity: 1; transform: translateY(0) scale(1.08); }
+      18%     { opacity: 1; transform: translateY(0) scale(1); }
+      33%     { transform: translateY(-3px) scale(1); }
+      45%     { transform: translateY(0) scale(1); }
+      57%     { transform: translateY(-3px) scale(1); }
+      69%     { transform: translateY(0) scale(1); }
+      81%     { transform: translateY(-3px) scale(1); }
+      88%     { transform: translateY(0) scale(1); }
+      90%       { opacity: 1; transform: translateY(0) scale(1); }
+      100%      { opacity: 0; transform: translateY(0) scale(1); }
+    }
+    @keyframes pop-2 {
+      0%, 12% { opacity: 0; transform: translateY(8px) scale(0.6); }
+      19%     { opacity: 1; transform: translateY(0) scale(1.08); }
+      22%     { opacity: 1; transform: translateY(0) scale(1); }
+      36%     { transform: translateY(-3px) scale(1); }
+      48%     { transform: translateY(0) scale(1); }
+      60%     { transform: translateY(-3px) scale(1); }
+      72%     { transform: translateY(0) scale(1); }
+      84%     { transform: translateY(-3px) scale(1); }
+      88%     { transform: translateY(0) scale(1); }
+      90%       { opacity: 1; transform: translateY(0) scale(1); }
+      100%      { opacity: 0; transform: translateY(0) scale(1); }
+    }
+
+    .tile-0 { animation: pop-0 9s ease-in-out infinite; }
+    .tile-1 { animation: pop-1 9s ease-in-out infinite; }
+    .tile-2 { animation: pop-2 9s ease-in-out infinite; }
+
+    /* Pengunjung yang mengaktifkan "kurangi gerakan" melihat ikon diam */
+    @media (prefers-reduced-motion: reduce) {
+      .tile { animation: none; }
+    }
+  </style>
+
+  <!-- Kartu gelap: tetap terbaca di tema GitHub terang maupun gelap -->
+  <rect x="0.5" y="0.5" width="339" height="111" rx="14" fill="#0d1117" stroke="#30363d"/>
+
+  <!-- HTML -->
+  <g class="tile tile-0">
+    <rect x="20" y="16" width="56" height="56" rx="14" fill="#e34f26"/>
+    <g transform="translate(31.2 27.2) scale(1.4)" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5l16 0"/><path d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5"/>
+    </g>
+    <text x="48.0" y="94" text-anchor="middle" font-size="12" fill="#8b949e">HTML</text>
+  </g>
+  <!-- CSS -->
+  <g class="tile tile-1">
+    <rect x="100" y="16" width="56" height="56" rx="14" fill="#1572b6"/>
+    <g transform="translate(111.2 27.2) scale(1.4)" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5l16 0"/><path d="M8.5 8h7l-4.5 4h4l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5"/>
+    </g>
+    <text x="128.0" y="94" text-anchor="middle" font-size="12" fill="#8b949e">CSS</text>
+  </g>
+  <!-- JavaScript -->
+  <g class="tile tile-2">
+    <rect x="180" y="16" width="56" height="56" rx="14" fill="#f7df1e"/>
+    <g transform="translate(191.2 27.2) scale(1.4)" fill="none" stroke="#1a1a1a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5l16 0"/><path d="M7.5 8h3v8l-2 -1"/><path d="M16.5 8h-2.5a.5 .5 0 0 0 -.5 .5v3a.5 .5 0 0 0 .5 .5h1.423a.5 .5 0 0 1 .495 .57l-.418 2.93l-2 .5"/>
+    </g>
+    <text x="208.0" y="94" text-anchor="middle" font-size="12" fill="#8b949e">JavaScript</text>
+  </g>
+</svg>
